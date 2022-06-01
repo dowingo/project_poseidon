@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <title>Meine Ausgabenliste</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='my_style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="my_style.css">
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Meine Ausgabenprotokoll</a>
@@ -29,63 +28,65 @@
     </div>
   </div>
 </nav>
-<br>
+<form>
 
-<div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Was hast du heute eingekauft</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" ="Example input placeholder">
-</div>
+  <div class="row mb-3">
+    <label for="inputEinkauf" class="col-sm-2 col-form-label">Was hast du eingekauft?</label>
+    <div class="col-sm-10">
+      <input type="einkauf" class="form-control" id="inputEinkauf">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputDatum" class="col-sm-2 col-form-label">Wann hast du es eingekauft? </label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" id="inputDatum">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Kategorie Einkauf</legend>
+    <div class="col-sm-10">
 
-<select class="form-select" aria-label="Default select example">
-  <option selected>In welche Kategorie fällt dein Einkauf?</option>
-  <option value="1">Essen</option>
-  <option value="2">Trinken</option>
-  <option value="4">Hobby</option>
-  <option value="5">Medikamente</option>
-  <option value="6">Haushalt</option>
-  <option value="7">Medikamente</option>
-  <option value="8">Medikamente</option>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Lebensmittel für zu Hause
+        </label>
+      </div>
 
-</select>
-<br>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Haushalt
+        </label>
+      </div>
 
-{% if  abgabe %}
-        <h2>Abgabe: {{ abgabe }} CHF</h2>
-     {% else %}
-        <form method="POST">
-            <input type="text" name="preis" placeholder="Preis (nur Zahl)">
-            <button type="submit">Senden</button>
-        </form>
-    {% endif %}
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option2">
+        <label class="form-check-label" for="gridRadios3">
+          Snacks in der Freizeit
+        </label>
+      </div>
 
-<div class="form-container">
-	<form action="">
-		<h1>Register now!</h1>
-		<div class="form-field multi-input">
-			<label for="name">Name</label>
-			<input type="text" name="first-name" id="name" placeholder="Your name"/>
-			<input type="text" placeholder="last name"/>
-		</div>
-		<div class="form-field input-right">
-		<label for="email">E-mail</label>
-			<input type="email" name="email" id="email" placeholder="example@mail.com"/>
-		</div>
-		<div class="form-field multi-input">
-		<label for="dob">DOB</label>
-			<select name="dob_day" id="dob" class="dob-select">
-				<option selected disabled>dd</option>
-			</select>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option2">
+        <label class="form-check-label" for="gridRadios4">
+          Trinken in der Freizeit
+        </label>
+      </div>
 
-			<select name="dob_month" id="dob">
-				<option selected disabled>mm</option>
-			</select>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option2">
+        <label class="form-check-label" for="gridRadios5">
+          Hobby
+        </label>
+      </div>
 
-			<select name="dob_year" id="dob">
-				<option selected disabled>yyyy</option>
-			</select>
-		</div>
-		<div class="form-field submit-field">
-		<input type="submit" value="Join now"/>
-		</div>
-	</form>
-</div>
+
+  </fieldset>
+
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Ausgabe speichern</button>
+</form>
+
