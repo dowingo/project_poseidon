@@ -9,9 +9,12 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
+
+
+<!-- Navibar_Start -->
+<nav class="navbar navbar-expand-lg bg-light" style="font-family: Verdana">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Home</a>
+    <a class="navbar-brand" href="#">MAIN</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +22,7 @@
       <ul class="navbar-nav">
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Meine Ausgabenprotokoll</a>
+          <a class="nav-link" href="ausgabenprotokoll.html">Meine Ausgabenprotokoll</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Statistik</a>
@@ -28,65 +31,121 @@
     </div>
   </div>
 </nav>
-<form>
+<!-- Navibar_End -->
 
-  <div class="row mb-3">
-    <label for="inputEinkauf" class="col-sm-2 col-form-label">Was hast du eingekauft?</label>
+
+
+<form action="/formular" method="POST">
+<!-- Formular_Einkauf_Start -->
+  <div class="row mb-3" style="font-family: Verdana">
+    <label for="einkauf" class="col-sm-2 col-form-label">Was hast du eingekauft?</label>
     <div class="col-sm-10">
-      <input type="einkauf" class="form-control" id="inputEinkauf">
+      <input type="text" class="form-control" id="einkauf" name="einkauf">
     </div>
   </div>
-  <div class="row mb-3">
-    <label for="inputDatum" class="col-sm-2 col-form-label">Wann hast du es eingekauft? </label>
+<!-- Formular_Einkauf_Ende -->
+
+<!-- Formular_Datum_Start -->
+  <div class="row mb-3" style="font-family: Verdana">
+    <label for="datum" class="col-sm-2 col-form-label"> Wann hast du es eingekauft? </label>
     <div class="col-sm-10">
-      <input type="date" class="form-control" id="inputDatum">
+      <input type="date" class="form-control" id="datum" name="datum">
     </div>
   </div>
-  <fieldset class="row mb-3">
+<!-- Formular_Datum_Ende -->
+
+<!-- Formular_kategorie_Start -->
+  <fieldset class="row mb-3" style="font-family: Verdana">
     <legend class="col-form-label col-sm-2 pt-0">Kategorie Einkauf</legend>
-    <div class="col-sm-10">
+    <div class="col-sm-10" name="kat">
 
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+    <div class="form-check" style="font-family: Verdana">
+        <input class="form-check-input" type="radio" name="kat" id="gridRadios1" value="Lebensmittel für zu Hause">
         <label class="form-check-label" for="gridRadios1">
           Lebensmittel für zu Hause
         </label>
       </div>
 
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-        <label class="form-check-label" for="gridRadios2">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="kat" id="Haushalt" value="Haushalt">
+        <label class="form-check-label" for="Haushalt">
           Haushalt
         </label>
       </div>
 
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option2">
-        <label class="form-check-label" for="gridRadios3">
+        <input class="form-check-input" type="radio" name="kat" id="Snacks in der Freizeit" value="Snacks in der Freizeit">
+        <label class="form-check-label" for="Snacks in der Freizeit">
           Snacks in der Freizeit
         </label>
       </div>
 
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option2">
-        <label class="form-check-label" for="gridRadios4">
+        <input class="form-check-input" type="radio" name="kat" id="Trinken in der Freizeit" value="Trinken in der Freizeit">
+        <label class="form-check-label" for="Trinken in der Freizeit">
           Trinken in der Freizeit
         </label>
       </div>
 
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option2">
-        <label class="form-check-label" for="gridRadios5">
+        <input class="form-check-input" type="radio" name="kat" id="Mittagessen auswärts" value="Mittagessen auswärts">
+        <label class="form-check-label" for="Mittagessen auswärts">
+          Mittagessen auswärts
+        </label>
+      </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="kat" id="Mobilität" value="Mobilität">
+        <label class="form-check-label" for="Mobilität">
+          Mobilität
+        </label>
+      </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="kat" id="Medikamente" value="Medikamente">
+        <label class="form-check-label" for="Medikamente">
+          Medikamente
+        </label>
+      </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="kat" id="Hobby" value="Hobby">
+        <label class="form-check-label" for="Hobby">
           Hobby
         </label>
       </div>
 
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="kat" id="Gaming" value="Gaming">
+        <label class="form-check-label" for="Gaming">
+          Gaming
+        </label>
+      </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="kat" id="Bildung" value="Bildung">
+        <label class="form-check-label" for="Bildung">
+          Bildung
+        </label>
+      </div>
 
   </fieldset>
+<!-- Formular_kategorie_Ende -->
 
+<!-- Formular_Preis_Start -->
+  <div div class="input-group mb-3" style="font-family: Verdana">
+    <label for="inputPreis" class="col-sm-2 col-form-label">Wie viel hast du ausgegeben?</label>
+      <input type="number" class="form-control" name="preis" id="preis">
+        <span class="input-group-text">CHF</span>
+  </div>
+<!-- Formular_Preis_Ende -->
+
+
+<br>
       </div>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Ausgabe speichern</button>
+
+  <button type="submit" class="btn btn-primary" style="font-family: Verdana">Ausgabe erfassen</button>
 </form>
 
