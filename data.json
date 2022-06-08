@@ -1,191 +1,56 @@
 [
     {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-15",
-        "Preis CHF": "5000"
-    },
-    {
-        "Einkauf": "",
-        "Datum": "",
-        "Preis CHF": ""
-    },
-    {
-        "Einkauf": "",
-        "Datum": "",
-        "Preis CHF": ""
-    },
-    {
-        "Einkauf": "",
-        "Datum": "",
-        "Preis CHF": ""
-    },
-    {
-        "Einkauf": "T-Shirt",
-        "Datum": "2022-06-24",
-        "Preis CHF": "3333"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-17",
-        "Preis CHF": "9090909090909"
-    },
-    {
-        "Einkauf": "T-Shirt",
-        "Datum": "2022-06-24",
-        "Preis CHF": "3333"
-    },
-    {
-        "Einkauf": "T-Shirt",
-        "Datum": "2022-06-24",
-        "Preis CHF": "3333"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-25",
-        "Preis CHF": "50000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-25",
-        "Kategorie": "Snacks in der Freizeit",
-        "Preis CHF": "50000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-30",
+        "Einkauf": "Call of Duty",
+        "Datum": "2022-04-15",
         "Kategorie": "Gaming",
-        "Preis CHF": "60000"
+        "Preis CHF": "70.00"
     },
     {
-        "Einkauf": "s",
-        "Datum": "2022-07-08",
-        "Kategorie": "Hobby",
-        "Preis CHF": "3"
+        "Einkauf": "Zug Billet",
+        "Datum": "2022-04-11",
+        "Kategorie": "Mobilit\u00e4t",
+        "Preis CHF": "3.00"
     },
     {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-18",
-        "Kategorie": "Mittagessen ausw\u00e4rts",
-        "Preis CHF": "6000000"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-18",
-        "Kategorie": "Mittagessen ausw\u00e4rts",
-        "Preis CHF": "6000000"
-    },
-    {
-        "Einkauf": "",
-        "Datum": "",
-        "Kategorie": "Trinken in der Freizeit",
-        "Preis CHF": ""
-    },
-    {
-        "Einkauf": "xx",
-        "Datum": "2022-06-14",
-        "Kategorie": "Mittagessen ausw\u00e4rts",
-        "Preis CHF": "333"
-    },
-    {
-        "Einkauf": "xx",
-        "Datum": "2022-06-14",
-        "Kategorie": "Mittagessen ausw\u00e4rts",
-        "Preis CHF": "333"
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-23",
-        "Kategorie": "Trinken in der Freizeit",
-        "Preis CHF": "500"
-    },
-    {
-        "Einkauf": "Hund",
-        "Datum": "2022-06-28",
+        "Einkauf": "Abwaschmittel",
+        "Datum": "2022-04-12",
         "Kategorie": "Haushalt",
-        "Preis CHF": "600"
+        "Preis CHF": "6.00"
     },
     {
-        "Einkauf": "Auto",
-        "Datum": "0033-03-31",
-        "Kategorie": "Haushalt",
-        "Preis CHF": "500"
-    },
-    {
-        "Einkauf": "",
-        "Datum": "",
-        "Kategorie": "Mittagessen ausw\u00e4rts",
-        "Preis CHF": ""
-    },
-    {
-        "Einkauf": "Auto",
-        "Datum": "2022-06-18",
+        "Einkauf": "M&M's",
+        "Datum": "2022-04-15",
         "Kategorie": "Snacks in der Freizeit",
-        "Preis CHF": "50000"
+        "Preis CHF": "4.00"
     },
     {
-        "Einkauf": "Auto",
-        "Datum": "",
+        "Einkauf": "Buch",
+        "Datum": "2022-04-16",
+        "Kategorie": "Bildung",
+        "Preis CHF": "20"
+    },
+    {
+        "Einkauf": "Fussballschuhe",
+        "Datum": "2022-04-18",
         "Kategorie": "Hobby",
-        "Preis CHF": ""
+        "Preis CHF": "180"
+    },
+    {
+        "Einkauf": "Augentropfen",
+        "Datum": "2022-04-18",
+        "Kategorie": "Medikamente",
+        "Preis CHF": "12"
+    },
+    {
+        "Einkauf": "Chips",
+        "Datum": "2022-04-20",
+        "Kategorie": "Snacks in der Freizeit",
+        "Preis CHF": "4"
+    },
+    {
+        "Einkauf": "Real Madrid Trikot",
+        "Datum": "2022-04-22",
+        "Kategorie": "Hobby",
+        "Preis CHF": "100"
     }
 ]
