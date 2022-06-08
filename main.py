@@ -45,6 +45,14 @@ def form():
     else:
         render_template("index.html")
 
+@app.route("/ausgabenprotokoll")
+def protokoll():
+    einkauf = Einkauf
+    datum = Datum]
+    preis = Preis
+    kat = Kategorie
+    return render_template("ausgabenprotokoll.html", einkauf=Einkauf, datum=Datum, kat=Kategorie, preis=Preis)
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
 
