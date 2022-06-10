@@ -47,11 +47,11 @@ def form():
 
 @app.route("/ausgabenprotokoll")
 def protokoll():
-    einkauf = Einkauf
-    datum = Datum]
-    preis = Preis
-    kat = Kategorie
-    return render_template("ausgabenprotokoll.html", einkauf=Einkauf, datum=Datum, kat=Kategorie, preis=Preis)
+    einkauf = einkauf
+    datum = datum
+    kat = kategorie
+    preis = preis
+    return render_template("ausgabenprotokoll.html", Einkauf=einkauf, Datum=datum, Kategorie=kategorie, Preis=preis)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
