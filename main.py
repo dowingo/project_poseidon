@@ -4,6 +4,8 @@ from flask import Flask
 from flask import render_template
 from flask import url_for
 from flask import request
+from flask import json
+import json
 import random
 
 
@@ -47,12 +49,8 @@ def form():
 
 @app.route("/ausgabenprotokoll")
 def protokoll():
-    einkauf = einkauf
-    datum = datum
-    kat = kategorie
-    preis = preis
-    return render_template("ausgabenprotokoll.html", Einkauf=einkauf, Datum=datum, Kategorie=kategorie, Preis=preis)
-
+    with open("data.json", encoding="utf-8") as open_file:
+        inhalt = json.load(open_file)
+        return render_template("ausgabenprotokoll.html", inhalt=inhalt)
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
-

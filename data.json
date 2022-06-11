@@ -52,5 +52,29 @@
         "Datum": "2022-04-22",
         "Kategorie": "Hobby",
         "Preis CHF": "100"
+    },
+    {
+        "Einkauf": "Apfel",
+        "Datum": "2022-05-31",
+        "Kategorie": "Snacks in der Freizeit",
+        "Preis CHF": "2"
+    },
+    {
+        "Einkauf": "Infernos (Chips)",
+        "Datum": "2022-07-01",
+        "Kategorie": "Snacks in der Freizeit",
+        "Preis CHF": "4"
+    },
+    {
+        "Einkauf": "Infernos (Chips)",
+        "Datum": "2022-07-01",
+        "Kategorie": "Snacks in der Freizeit",
+        "Preis CHF": "4"
+    },
+    {
+        "Einkauf": "Bier",
+        "Datum": "2022-06-02",
+        "Kategorie": "Trinken in der Freizeit",
+        "Preis CHF": "5.00"
     }
 ]
