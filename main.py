@@ -56,15 +56,13 @@ def protokoll():
 @app.route("/statistik")
 def statistik():
     with open("data.json", encoding="utf-8") as open_file:
-        inhalt = json.load(open_file)
-        #damit menues gezählt werden vom Inhalt bzw. jsonfile
-        count = len(inhalt)
+        stat = json.load(open_file)
+        count = len(stat)
     about_link = url_for("statistik")
-    # damit alle Preise CHF summiert werden, summe muss zuerst definiert werden
     summe = 0
-    for el in inhalt:
+    for el in stat:
         summe += int(float(el["Preis CHF"]))
-        return render_template("statistik.html", link=about_link, count=count, ausgaben=summe)
+    return render_template("statistik.html", link=about_link, count=count, ausgaben=summe)
 
 
 if __name__ == "__main__":
