@@ -76,5 +76,23 @@
         "Datum": "2022-06-02",
         "Kategorie": "Trinken in der Freizeit",
         "Preis CHF": "5.00"
+    },
+    {
+        "Einkauf": "Teigwaren",
+        "Datum": "2022-06-06",
+        "Kategorie": "Lebensmittel f\u00fcr zu Hause",
+        "Preis CHF": "5.00"
+    },
+    {
+        "Einkauf": "Pesto",
+        "Datum": "2022-06-06",
+        "Kategorie": "Lebensmittel f\u00fcr zu Hause",
+        "Preis CHF": "4.00"
+    },
+    {
+        "Einkauf": "Season Pass Warzone",
+        "Datum": "2022-06-06",
+        "Kategorie": "Gaming",
+        "Preis CHF": "20.00"
     }
 ]
