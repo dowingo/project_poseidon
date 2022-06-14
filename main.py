@@ -1,5 +1,3 @@
-import json
-
 from flask import Flask
 from flask import render_template
 from flask import url_for
@@ -62,8 +60,18 @@ def statistik():
     summe = 0
     for el in stat:
         summe += int(float(el["Preis CHF"]))
-    return render_template("statistik.html", link=about_link, count=count, ausgaben=summe)
 
+    ausgaben_kategorie = {}
+    for el in stat:
+        if el["Kategorie"] in ausgaben_kategorie:
+            ausgaben_kategorie[el["Kategorie"]] += el["Preis CHF"]
+        else:
+            ausgaben_kategorie[el["Kategorie"]] = el["Preis CHF"]
+            Kategorie = list(ausgaben_kategorie.keys())
+            summierte_ausgaben = list(ausgaben_kategorie.values())
+            grösste_Ausgabe = max(summierte_ausgaben)
+
+    return render_template("statistik.html", link=about_link, count=count, ausgaben=summe, grösste_ausgabe=grösste_Ausgabe, kategorie=Kategorie)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)

@@ -94,5 +94,23 @@
         "Datum": "2022-06-06",
         "Kategorie": "Gaming",
         "Preis CHF": "20.00"
+    },
+    {
+        "Einkauf": "Gipfeli",
+        "Datum": "2022-06-07",
+        "Kategorie": "Snacks in der Freizeit",
+        "Preis CHF": "1"
+    },
+    {
+        "Einkauf": "Englisch Buch",
+        "Datum": "2022-06-08",
+        "Kategorie": "Bildung",
+        "Preis CHF": "22.00"
+    },
+    {
+        "Einkauf": "Fussballst\u00fclpen",
+        "Datum": "2022-06-08",
+        "Kategorie": "Hobby",
+        "Preis CHF": "15.00"
     }
 ]
