@@ -54,24 +54,30 @@ def protokoll():
 @app.route("/statistik")
 def statistik():
     with open("data.json", encoding="utf-8") as open_file:
-        stat = json.load(open_file)
-        count = len(stat)
+        ausgaben = json.load(open_file)
+        count = len(ausgaben)
     about_link = url_for("statistik")
     summe = 0
-    for el in stat:
+    for el in ausgaben:
         summe += int(float(el["Preis CHF"]))
 
-    ausgaben_kategorie = {}
-    for el in stat:
-        if el["Kategorie"] in ausgaben_kategorie:
-            ausgaben_kategorie[el["Kategorie"]] += el["Preis CHF"]
-        else:
-            ausgaben_kategorie[el["Kategorie"]] = el["Preis CHF"]
-            Kategorie = list(ausgaben_kategorie.keys())
-            summierte_ausgaben = list(ausgaben_kategorie.values())
-            grösste_Ausgabe = max(summierte_ausgaben)
+    with open("data.json") as open_file:
+        ausgaben2 = json.load(open_file)
+        dict_1 = {}
+        for element in ausgaben2:
+            for key, value in element.items():
+                if key == "Kategorie":
+                    dict_1.setdefault(value, [])
+                    dict_1[value].append(float(element["Preis CHF"]))
 
-    return render_template("statistik.html", link=about_link, count=count, ausgaben=summe, grösste_ausgabe=grösste_Ausgabe, kategorie=Kategorie)
+    for key, value in dict_1.items():
+        value = sum(value)
+        dict_1[key] = value
+
+
+    highest_kat = max(dict_1, key=dict_1.get)
+
+    return render_template("statistik.html", link=about_link, count=count, total_ausgaben=summe, highest_kat=highest_kat)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
