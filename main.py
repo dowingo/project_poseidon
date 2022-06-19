@@ -67,7 +67,7 @@ def statistik():
         for element in ausgaben2:
             for key, value in element.items():
                 if key == "Kategorie":
-                    dict_1.setdefault(value, [])
+                    dict_1.setdefault(value, []) #setdefault wird dazu verwendet um mehrere values einem Key zuzuordnen
                     dict_1[value].append(float(element["Preis CHF"]))
 
     for key, value in dict_1.items():

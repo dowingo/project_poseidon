@@ -3,11 +3,20 @@ import plotly.express as px
 import pandas as pd
 import plotly
 
+df = pd.read_json("data.json")
 
-fig = px.bar(x=kategorien, y=summierte_ausgaben)
-                fig.update_layout(
-                    title="Ausgaben pro Kategorie",
-                    xaxis_title="Kategorien",
-                    yaxis_title="Ausgaben")
-                div = plot(fig, output_type="div")
-                print(div)
+values = df["Kategorie"]
+
+fig = px.pie(df,
+             values=values,
+             names=names,
+             title="KUCHENDIAGRAMM")
+
+fig.update_traces(
+    textposition = 'inside',
+    textinfo='percent+label'
+    )
+
+fig.update
+
+
