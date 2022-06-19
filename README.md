@@ -8,6 +8,7 @@ Dieses Projekt wird gemacht, um eine Übersicht über die eigenen Ausgaben zu ha
 Um Das Projekt zu benutzen, muss man die main.py Datei ausführen und dem Link, welcher geprinted wird, folgen.
 
 **Architektur**
+![Unbenannte Zeichnung (1)](https://user-images.githubusercontent.com/100360112/174498190-eb6f4dc1-0186-4d03-b328-38a918b1fbc1.png)
 
 
 **Ungelöste/unbearbeitete Probleme**
